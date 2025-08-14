@@ -8,6 +8,12 @@
     color: var(--font-primary)
 }
 
+.dark-mode .drop-topic,
+.dark-mode .drop-sub-topic{
+    border: 1px solid var(--font-primary);
+}
+
+.dark-mode h2,
 .dark-mode h3,.dark-mode #due_date_label{
     color: var(--font-primary) !important;
 

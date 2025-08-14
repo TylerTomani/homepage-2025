@@ -1,0 +1,336 @@
+    <h4>Github</h4>
+    <div class="topics-questions">
+        <div class="topic">
+            <a id="iJustWantToDoThe" tabindex="0" href="#" class="drop-topic">github pushing TOO Large File Fix</a>
+            <div class="questions-container">
+                <div class="question-container">
+                <div class="answer question-answer">
+                    <article class="text-token-text-primary question-txt">
+                    <h6 class="sr-only">Fix for Enter key with nested elements inside anchor</h6>
+                    <div class="text-base">
+                        <div class="whitespace-pre-wrap">
+                        <pre tabindex="0" class="copy-code drop-question">i just want to do the easiest way and make sure i don&#39;t loose my current directory at all, i just want to get rid of the zip that appeared which it says is 
+            programShortcut-jul-1.zip</pre>
+                        </div>
+                    </div>
+                    </article>
+                    <article class="text-token-text-primary answer-txt">
+                    <h6 class="sr-only">Chat Gpt Said: </h6>
+                    <div class="text-base">
+                        <div class="markdown prose">
+                        <p>Perfect — we’ll take the <strong>safest and easiest route using BFG</strong>, and you <strong>won’t lose your current files</strong> at all. You’re just removing the <code>.zip</code> <strong>from your Git history</strong>, not from your current folder.</p>
+
+            <h2>✅ Step-by-Step: Safely Remove <code>programShortcut-jul-1.zip</code> with BFG</h2>
+            <h3>🔹 1. <strong>Download BFG Repo-Cleaner</strong></h3>
+            <ul>
+            <li>
+            <p>Go to: <a>https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar</a></p>
+            </li>
+            <li>
+            <p>Save it to your home folder or project directory.</p>
+            </li>
+            </ul>
+
+            <h3>🔹 2. <strong>Make a backup (optional, but safe)</strong></h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashcd path/to/your/project
+            cp -r . ../program-backup</pre></div>
+
+            <h3>🔹 3. <strong>Create a fresh clone of your repo (required by BFG)</strong></h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashcd ..
+            git clone --mirror https://github.com/TylerTomani/programshortcuts.git
+            cd programshortcuts.git</pre></div>
+            <blockquote>
+            <p>This creates a <strong>bare clone</strong> with full history. BFG needs this format.</p>
+            </blockquote>
+
+            <h3>🔹 4. <strong>Run BFG to delete the <code>.zip</code></strong></h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashjava -jar ../bfg-1.14.0.jar --delete-files 'programShortcut-jul-1.zip'</pre></div>
+            <p>If you're in the same folder as the JAR, use:</p>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashjava -jar bfg-1.14.0.jar --delete-files 'programShortcut-jul-1.zip'</pre></div>
+
+            <h3>🔹 5</h3><p>Got it — if you <strong>don’t want to download anything</strong>, we’ll use <strong>pure Git commands</strong> to safely remove the <code>.zip</code> file from your Git history <strong>without touching your working directory</strong>.</p>
+
+            <h2>✅ SAFEST WAY (No Downloads) – Remove ZIP from Git History</h2>
+            <p>Here’s exactly what to do:</p>
+            <h3>🔹 1. Make sure you’re in your project folder</h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashcd /path/to/your/project</pre></div>
+
+            <h3>🔹 2. Remove the ZIP file from Git history using <code>filter-branch</code></h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashgit filter-branch --force --index-filter \
+            'git rm --cached --ignore-unmatch programShortcut-jul-1.zip' \
+            --prune-empty --tag-name-filter cat -- --all</pre></div>
+            <p>✅ This <strong>removes the file from all commits</strong>, but <strong>keeps your working folder untouched</strong>.</p>
+
+            <h3>🔹 3. Clean up history and garbage</h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashrm -rf .git/refs/original/
+            git reflog expire --expire=now --all
+            git gc --prune=now --aggressive</pre></div>
+
+            <h3>🔹 4. Force-push the cleaned history to GitHub</h3>
+            <div class="code-container"><pre class="copy-code" tabindex="0">bashgit push origin --force --all</pre></div>
+
+            <h2>💡 Done!</h2>
+            <p>This removes <code>programShortcut-jul-1.zip</code> from all past commits, prevents GitHub from rejecting your push, and keeps your current directory exactly as it is.</p>
+            <p>Let me know when you've done it or if you want me to review the exact commands again based on your current path.</p>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Installing Git for Visual Studio code (pull error) -->   
+        <div class="topic">
+            <a id="installingGitForVisualStudioCode" tabindex="0" href="#" class="drop-topic">Installing Git for Visual Studio code
+            <br>(pull error)
+            </a>
+            <div class="questions-container">
+                <div class="question-container">
+                    <!-- Below in the the articles are the same format is chatgpt -->
+                    <!-- I'm keeping the html the same but adding the classes:
+                        questions-answer, question-txt, answer-txt-->
+                    <!-- Push and Pull Error -->
+                    <div class="question-answer">
+                        <article class="text-token-text-primary question-txt">
+                            <h6 class="sr-only">Push and Pull Error</h6>
+                            <div class="text-base">
+                                <!-- .whitespace-pre-wrap is 8th inner child of .text-base i'm changing 
+                                                it to a pre so i can copy it  -->
+                                <div class="whitespace-pre-wrap">
+                                    <pre tabindex="0" class="copy-code drop-question">
+    i dont want to keep the local changes and i getting the folllowing message when trying to use the
+    3rd option,
+    git checkout -- javascript-youtube/chrisCourses/chrisCourses.html
+    git pull origin main
+    (base) /bin/zsh:$ git pull origin main
+    From https://github.com/TylerTomani/youtube-resources
+    * branch main -> FETCH_HEAD
+    Auto-merging javascript-youtube/chrisCourses/02-pacman/js/lesson-temp.js
+    hint: Waiting for your editor to close the file... atom --wait: atom: command not found
+    error: There was a problem with the editor 'atom --wait'.
+    Not committing merge; use 'git commit' to complete the merge.</pre>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="text-token-text-primary answer-txt">
+                            <h6 class="sr-only">Chat Gpt Said: </h6>
+                            <div class="text-base">
+                                <!-- .markdown .prose is 5th inner child of the 2nd child element 
+                                                                '.group/conversation-turn' of .text-base   -->
+                                <div class="markdown prose">
+                                    <p>
+                                        The reason why the code at line 47 (i.e., toggleImgVid(e)) is executing twice could be
+                                        due to multiple event listeners
+                                        triggering it. Here are possible reasons:
+                                    </p>
+                                    <h3>1. Multiple Event Listeners Firing</h3>
+                                    <p>
+                                        There are two separate places where toggleImgVid(e) is being called:
+                                        Inside the keydown event listener for .copy-code elements:
+                                        js
+                                    </p>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="">
+tabIndexElements.forEach(el => {
+    el.addEventListener('keydown', e => {
+        let letter = e.key.toLowerCase()
+        if (letter == 'enter') {
+        <span class="r">toggleImgVid(e) // Call 1</span>
+        }
+    })
+})
+                                        </pre>
+                                    </div>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="">
+addEventListener('keydown', e => {
+    let letter = e.key.toLowerCase()
+    if (letter == 'enter') {
+<span class="r">toggleImgVid(e) // Call 2</span>
+    addTabIndexes(e)
+}
+})
+                                        </pre>
+                                    </div>
+                                    <h3>2. Event Bubbling</h3>
+                                    <p>
+                                        If the keydown event is triggered inside a .copy-code element, it will first fire in the
+                                        individual element's event
+                                        listener (inside the tabIndexElements.forEach(...) loop).
+                                        Then, because keydown events bubble up, it also triggers the global keydown event
+                                        listener.
+                                        This results in toggleImgVid(e) executing twice—once from the .copy-code element
+                                        listener and once from the global
+                                        listener.
+                                    </p>
+                                    <h3>Solution</h3>
+                                    <p>
+                                        To prevent duplicate execution, you can stop event propagation inside the .copy-code
+                                        event listener:
+                                    </p>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+tabIndexElements.forEach(el => {
+    el.addEventListener('keydown', e => {
+    let letter = e.key.toLowerCase()
+    if (letter == 'enter') {
+    <span class="m">e.stopPropagation() // Prevent event from reaching the global listener</span>
+        toggleImgVid(e)
+    }
+    })
+})
+                                        </pre>
+                                    </div>
+        
+                                    <p>
+                                        <strong>Alternative Fix:</strong> Using a Single Event Listener
+                                        Instead of attaching an event listener to each .copy-code element, delegate it to the
+                                        document:
+                                    </p>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+document.addEventListener('keydown', e => {
+    let letter = e.key.toLowerCase()
+    if (letter == 'enter') {
+    if (e.target.classList.contains('copy-code')) {
+        e.preventDefault()
+        toggleImgVid(e)
+        return // Prevent further execution
+    }
+    toggleImgVid(e)
+    addTabIndexes(e)
+    }
+})</pre>
+                                    </div>
+                                    <p>
+                                        This avoids multiple event listeners and prevents duplicate execution.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- ------------------------------------------------------- -->
+                </div>
+            </div>
+        </div>
+        <!-- Replace current directory with git branch -->   
+        <div class="topic">
+            <a id="replaceCurrentDirectoryWithGitBranch" tabindex="0" href="#" class="drop-topic">
+                Replace current directory with git branch
+            </a>
+            <div class="questions-container">
+                <div class="question-container">
+                    <!-- Hide Scrollbar with Scroll & clone brance pwd git -->
+                    <div class="question-answer">
+                        <article class="text-token-text-primary question-txt">
+                            <h6 class="sr-only">Hide Scrollbar with Scroll & clone brance pwd git</h6>
+                            <div class="text-base">
+                                
+                                <div class="whitespace-pre-wrap">
+                                    <pre tabindex="0" class="copy-code drop-question">
+no i don't want to remove that seems dangerous i've done this before without this, i just need the current branch on git
+hub to replace my current git direcotry saved locally on my computer in vs code
+</pre>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="text-token-text-primary answer-txt">
+                            <h6 class="sr-only">Chat Gpt Said: </h6>
+                            <div class="text-base">
+                                <div class="markdown prose">
+                                    <h3>✅ Safe Steps to Replace Local Code with Remote main Branch</h3>                                 
+                                    <p>
+                                        This will reset your local branch to exactly match GitHub’s main branch.
+                                    </p>
+                                    <h4>1. Make sure you're on the main branch:</h4>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git checkout main</pre>
+                                    </div>
+                                    <h4>2. Fetch the latest from the remote:</h4>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git fetch origin</pre>
+                                    </div>
+                                    <h4>3. Hard reset your local branch to match GitHub’s main branch:</h4>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git reset --hard origin/main</pre>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Overwrite main branch with draft branch -->
+        <div class="topic">
+            <a id="OverwriteMainBranchWithDraftBranch" tabindex="0" href="#" class="drop-topic">
+                Overwrite main branch with draft branch
+            </a>
+            <div class="questions-container">
+                <div class="question-container">
+                    <!-- Update tutorial link dynamically -->
+                    <div class="question-answer">
+                        <article class="text-token-text-primary question-txt">
+                            <h6 class="sr-only">Update tutorial link dynamically</h6>
+                            <div class="text-base">
+                                
+                                <div class="whitespace-pre-wrap">
+                                    <pre tabindex="0" class="copy-code drop-question">
+i'm confused, i'm currently in my draft branch, i want to save my draft into my main and overwrite the main
+</pre>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="text-token-text-primary answer-txt">
+                            <h6 class="sr-only">Chat Gpt Said: </h6>
+                            <div class="text-base">
+                                <div class="markdown prose">
+                                    <h3>✅ Steps to overwrite main with your current branch:</h3>                                 
+                                    <h4>1. Make sure all your changes are committed</h4>
+                                    <p>
+                                        If you still have unstaged changes:
+                                    </p>
+
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git add .</pre>
+                                    </div>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git commit -m "Final draft version"</pre>
+                                    </div>
+                                   <h4>2. Switch to main branch</h4>                                    
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git checkout main</pre>
+                                    </div>
+                                    <h4>3. Overwrite main with the draft using git reset --hard</h4>
+                                    <p>Let’s assume your draft branch is called draft-branch.</p>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+                                            git reset --hard draft-branch</pre>
+                                    </div>
+                                    <p>is makes your main branch exactly match your draft-branch.</p>
+                                    <h4>4. Push the updated main to GitHub (force push)</h4>
+                                    <div class="code-container">
+                                        <pre tabindex="0" class="copy-code">
+git push origin main --force</pre>
+                                    </div>
+                                    <p>
+                                        <strong>⚠️ Warning:</strong>This will overwrite the remote main branch on GitHub with your local version — so don’t do this if others
+                                        are also working on the main branch unless you're sure.
+                                    </p>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

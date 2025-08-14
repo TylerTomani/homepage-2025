@@ -1,0 +1,12 @@
+.dc {color: darkcyan;}
+.dgr {color: darkgoldenrod;}
+.r {color: tomato;}
+.l {color: darkgreen;}
+.m {color: magenta;}
+.strike {
+    text-decoration: line-through;
+}
+.markdown .code-container .copy-code{
+    background-color: lightgray;
+    color: black;
+}
