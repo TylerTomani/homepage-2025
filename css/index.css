@@ -14,7 +14,7 @@ body {
 }
 header{
     display: flex;
-    background: repeating-linear-gradient(100deg,darkorange, white 1%,#1f3741  90%);
+    /* background: repeating-linear-gradient(100deg,darkorange, white 1%,#1f3741  90%); */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header h1{
@@ -30,7 +30,7 @@ header>.vid-container {
 }
 main{
     border-radius: 10px;
-    background: repeating-linear-gradient(200deg,#3cd4f6, #ebf8e1 15%,#1f3741  90%);
+    /* background: repeating-linear-gradient(200deg,#3cd4f6, #ebf8e1 15%,#1f3741  90%); */
     /* background: repeating-linear-gradient(100deg, #f6e73c,
         #ebf8e1 15%,
         #1f3741 90%); */
