@@ -63,7 +63,8 @@ a.drop-topic{
     /* border: 1px solid black; */
     border-bottom: none;
     border-right: 1px solid  black;
-    border-bottom: 1px solid navajowhite;
+    /* border-bottom: 1px solid navajowhite; */
+    border-top: 1px solid navajowhite;
     /* box-shadow: 1px 2px 1px 1px white; */
 }
 .topic > a.drop-topic,
