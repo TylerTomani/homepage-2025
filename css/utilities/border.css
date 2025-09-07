@@ -1,0 +1,6 @@
+a.drop-topic{
+    border: 1px solid black 
+}
+#aiToolsTopicsContainer .sub-topic .drop-sub-topic{
+    border-bottom: none !important;
+}

@@ -1,3 +1,6 @@
+@import url('utilities/border.css');
+@import url('utilities/effects.css');
+@import url('utilities/spacing.css');
 :root{
     --blue:#192752;
 }
@@ -62,10 +65,10 @@ a.drop-topic{
     padding: 0;
     padding-left: 2%;
     /* border: 1px solid black; */
-    border-bottom: none;
-    border-right: 1px solid  black;
+    /* border-bottom: none; */
+    /* border-right: 1px solid  black; */
     /* border-bottom: 1px solid navajowhite; */
-    border-top: 1px solid navajowhite;
+    /* border-top: 1px solid navajowhite; */
     /* box-shadow: 1px 2px 1px 1px white; */
 }
 .topic > a.drop-topic,

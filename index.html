@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage-2025</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dark-mode.css">
     <script src="js/letter-focus-index.js" defer></script>
     <!-- <script src="js/letterFocus-temp.js" defer></script> -->
@@ -12,8 +12,8 @@
     <script src="js/dark-mode.js" defer></script>
     <meta name="google-site-verification" content="77_XwMzhba7g2Um77a8oIZCva60Xuht0lhSPmFJijLU" />
 </head>
-<body class="dark-mode">
-<!-- <body > -->
+<!-- <body class="dark-mode"> -->
+<body >
     <div class="btn-container">
         <button id="darkmodeBtn">darkmodeBtn</button>
         <p>(<span class="lg-txt">⇧</span> + K )</p>
@@ -21,22 +21,22 @@
     <header> 
         <div class="title">
             <h1><a tabindex="0" href="" id="home">homepage - 2025 </a></h1>            
+            <sup style="color: tomato; font-weight: 999;">** i think this page has best letterFocus/keyboard-nav</sup>
         </div>
     </header>
     <!-- main can be seen as topics-container -->
     <main tabindex="0" id="mainContainer">
+        <!-- PROJECTS -->
         <section  class="topic">
             <header>
-                <a class="drop-topic show " id="projects" href="#"><h2>Projects</h2></a>
+                <a class="drop-topic" id="projects" href="#"><h2>Projects</h2></a>
                 <a target="_blank" id="vibeCodeingProjects" href="https://tylertomani.github.io/vibe-coding-project/">
                     vibe coding project</a>
             </header>
-            <div class="topics-container ">
+            <div class="topics-container hide ">
                 <!-- projects - Tools -->
                 <div class="sub-topic">
-                    <a class="drop-sub-topic show" href="#">
-                        <h3>Tools</h3>
-                    </a>
+                    <a class="drop-sub-topic show" href="#"><h3>Tools</h3></a>
                     <div class="sub-topic-container show">
                         <!-- <a class="project" href="tools/elFinderCssGet-boiler-plate/elFinderCssGet-boiler-plate-draft/elFinderCssGet-boiler-plate-draft.html">
                             <h3>Element Finder Css Get - boiler-plate - draft</h3>
@@ -56,7 +56,6 @@
                 <div class="sub-topic">
                     <a class="drop-sub-topic" href="#"><h3>Extensions</h3></a>
                     <div class="sub-topic-container show">
-                        
                         <!-- <a class="project" href="">
                             <h3>ChatGpt-copy-paste</h3>
                         </a> -->
@@ -148,13 +147,13 @@
                 
             </div>
         </section>
-        <section  class="topic ">
-            <a class="drop-topic " href="#">
+        <!-- Youtube -->
+        <section class="topic ">
+            <header>
                 <a class="drop-topic show " id="youtube" href="#">
                     <h2>youtube</h2>
-                </a>
-                
-            </a>
+                </a>        
+            </header>
             <div class="topics-container  ">
                 <a id="dockerYoutube" class="project"
                     href="https://tylertomani.github.io/youtube-resources/docker-youtube/docker-youtube.html">
@@ -200,6 +199,79 @@
                 </a>
             </div>
         </section>
+        <!-- AI TOOLS -->
+        <section class="topic">
+            <header>
+                <a class="drop-topic" id="aiTools" href="#">
+                    <h2>AI Tools</h2>
+                </a>
+            </header>
+            <div id="aiToolsTopicsContainer" class="topics-container show ">
+                <!-- free-->
+                <div class="sub-topic">
+                    <a class="drop-sub-topic show" href="#">
+                        <h3>Video Generation</h3>
+                    </a>
+                    <div class="sub-topic-container show">
+                        <!-- <a class="project" href="tools/elFinderCssGet-boiler-plate/elFinderCssGet-boiler-plate-draft/elFinderCssGet-boiler-plate-draft.html">
+                                    <h3>Element Finder Css Get - boiler-plate - draft</h3>
+                                </a> -->
+                        <a class="project" target="_blank" href="https://www.udio.com/?utm_source=google&utm_medium=cpc&utm_campaign=22053140610&utm_content=171283075654&utm_term=udio&gad_source=1&gad_campaignid=22053140610&gbraid=0AAAAA9qNKz10L8xk7IgjCe0uuMTAGuGVu&gclid=CjwKCAjwt-_FBhBzEiwA7QEqyPFnZW-FmQeQTV-rSFYtMMazIwmCJQujFSRQioULgYk9l59JT8PTFBoCBhgQAvD_BwE">
+                            <h3>udio.com<sup>**free</sup></h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- AI TOOLS - Image Generation -->
+                <div class="sub-topic">
+                    <a class="drop-sub-topic" href="#">
+                        <h3>Image Generation</h3>
+                    </a>
+                    <div class="sub-topic-container show">
+                        <a class="project"
+                            href="https://tylertomani.github.io/extensions/chatGpt-navFocus/chatGpt-navFocus.html">
+                            <h3>ChatGpt-nav-focus</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- AI TOOLS - Music -->
+                <div class="sub-topic">
+                    <a class="drop-sub-topic" href="#">
+                        <h3>Music</h3>
+                    </a>
+                    <div class="sub-topic-container show ">
+                        <a class="project" href="projects/other/nutriton-facts/nutriton-facts.html">
+                            <h3>nutriton-facts</h3>
+                        </a>                        
+                    </div>
+                </div>
+                <!-- projects - Web Pages -->
+                <div class="sub-topic">
+                    <a class="drop-sub-topic " href="#">
+                        <h3>TBD</h3>
+                    </a>
+                    <div class="sub-topic-container show">
+                        <a class="project" href="https://tylertomani.github.io/codeCmdShortcuts/">
+                            <h3>codeCommandsShortcuts</h3>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- AI TOOLS  -->
+                <div class="sub-topic">
+                    <a class="drop-sub-topic" href="#">
+                        <h3>TBS</h3>
+                    </a>
+                    <div class="sub-topic-container hide">
+                        <a class="project" href="projects/apps/languageApp/languageApp-stylesOnly.html">
+                            <h3>TBD</h3>
+                            <work style="color:red">(styles only) </sub>
+                        </a>
+                    
+                </div>
+        
+            </div>
+        </section>
+        <!-- INSTITUTIONS -->
         <section id="institutions" class="topic">
             <a class="drop-topic" href="#">
                 <h2>Institutions</h2>
