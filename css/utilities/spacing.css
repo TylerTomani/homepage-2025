@@ -34,3 +34,13 @@ a.drop-topic {
     margin-left: 2.5%;
     padding-left: 2.5%;
 }
+#youtubeResourcesSection>.topics-container {
+    margin-top: 2.5%;
+}
+
+#youtubeResourcesSection>.topics-container .project {
+    height: 8vh;
+    padding-top: 1%;
+    padding-left: 1%;
+
+}

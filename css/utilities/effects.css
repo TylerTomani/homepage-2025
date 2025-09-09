@@ -1,37 +1,48 @@
 :root {
     --x: 1px;
-    --xB: 4px;
-    --yB: 4px;
+    --xB: 2px;
+    --yB: 2px;
 }
-
+.project:focus,
+.project:active {
+    outline: none;
+    margin-top: 2px !important;
+    margin-left: 2px !important;
+    transition: all .2s;
+}
+.js-b:focus  h3,
+.js-b:active h3,
+.python-b:focus h3,
+.python-b:active h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 999;
+    text-shadow: -2px 1px black;
+    font-size: 150%;
+}
+.js-b:focus,
+.js-b:active,
+.python-b:focus,
+.python-b:active{border: 2px solid black !important;}
 .js-b:focus,
 .js-b:active {
     box-shadow: var(--x) 0 var(--xB) var(--yB) yellow !important;
-    border: 2px solid yellow !important;
+    background-color: rgb(255, 255, 0,.3);
     border: 10px;
 }
-
 .nodeJs-b:focus,
 .nodeJs-b:active {
     box-shadow: var(--x) 0 var(--xB) var(--yB) royalblue !important;
     border: 2px solid royalblue !important;
 }
-
-.python-b:focus,
-.python-b:active {
-    box-shadow: var(--x) 0 var(--xB) var(--yB) mediumpurple !important;
-    border: 2px solid mediumpurple !important;
-}
-
 .docker-b:focus,
 .docker-b:active {
     box-shadow: var(--x) 0 var(--xB) var(--yB) darkslateblue !important;
     border: 2px solid darkslateblue !important;
 }
 
-.project:focus,
-.project:active {
-    margin-top: 2px !important;
-    margin-left: 2px !important;
-    transition: all .2s;
+.python-b:focus,
+.python-b:active {
+    box-shadow: var(--x) 0 var(--xB) var(--yB) mediumpurple !important;
+    background-color: mediumpurple;
+    border: 10px;
 }

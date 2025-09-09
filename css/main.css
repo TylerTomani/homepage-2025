@@ -19,16 +19,7 @@
     justify-content: center;
     align-items: center;
 }
-#youtubeResourcesSection > .topics-container{
-    margin-top: 2.5%;
-}
-#youtubeResourcesSection > .topics-container .project{
-    flex-basis: 20%;
-    height: 8vh;
-    padding-top: 1%;
-    padding-left: 1%;
 
-}
 .hide {
     display: none;
 }

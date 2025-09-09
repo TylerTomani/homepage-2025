@@ -39,3 +39,6 @@ main {
     flex-basis: 15%;
     flex-direction: column;
 }
+#youtubeResourcesSection>.topics-container .project {
+    flex-basis: 20%;
+}
