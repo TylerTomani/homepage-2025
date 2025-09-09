@@ -15,10 +15,7 @@
     box-sizing: border-box;
     position: relative;
 }
-header h1{
-     /* border: 2px solid black; */
-    /* color: #484230; */
-}
+
 
 header > .topics-container {
     font-size: 60%;
