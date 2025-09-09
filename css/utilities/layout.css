@@ -23,17 +23,17 @@ main {
     flex-direction: column;
 }
 
+.topic>.topics-container>.topic {
+    display: flex;
+    flex-basis: 49%;
+    flex-direction: column;
+}
 .topics-container>.project {
     display: flex;
     flex-basis: 15%;
     flex-direction: column;
 }
 
-.topic>.topics-container>.topic {
-    display: flex;
-    flex-basis: 49%;
-    flex-direction: column;
-}
 .sub-topic-container>.project {
     display: flex;
     flex-basis: 15%;

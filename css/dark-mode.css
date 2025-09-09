@@ -65,3 +65,16 @@ h4 .dark-mode p {
 }
 
 
+.dark-mode .ai-b:focus h3,
+.dark-mode .ai-b:active h3,
+.dark-mode .js-b:focus h3,
+.dark-mode .js-b:active h3,
+.dark-mode .python-b:focus h3,
+.dark-mode .python-b:active h3 {
+    text-shadow: -2px 1px black;
+    color: whitesmoke !important;
+}
+.dark-mode .python-b:focus,
+.python-b:active {
+    background-color: rgb(147, 112, 216);
+}

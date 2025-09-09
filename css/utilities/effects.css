@@ -10,13 +10,16 @@
     margin-left: 2px !important;
     transition: all .2s;
 }
+.ai-b:focus  h3,
+.ai-b:active h3,
 .js-b:focus  h3,
 .js-b:active h3,
 .python-b:focus h3,
 .python-b:active h3 {
+    color: whitesmoke;
+    text-shadow: -1px 1px 3px  black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 999;
-    text-shadow: -2px 1px black;
+    font-weight: 999;    
     font-size: 150%;
 }
 .js-b:focus,
@@ -43,6 +46,13 @@
 .python-b:focus,
 .python-b:active {
     box-shadow: var(--x) 0 var(--xB) var(--yB) mediumpurple !important;
-    background-color: mediumpurple;
+    background-color: rgb(147, 112, 216, .4);
+    border: 10px;
+    font-size: 1.3rem;
+}
+.ai-b:focus,
+.ai-b:active {
+    box-shadow: var(--x) 0 var(--xB) var(--yB) orangered !important;
+    background-color: rgb(255, 69, 0,.4);
     border: 10px;
 }

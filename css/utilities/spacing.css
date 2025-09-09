@@ -42,5 +42,9 @@ a.drop-topic {
     height: 8vh;
     padding-top: 1%;
     padding-left: 1%;
-
+    
+}
+#aiYoutube {
+    padding-top: 2% !important;
+    padding-left: 2% !important;    
 }

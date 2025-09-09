@@ -6,18 +6,18 @@ a.drop-topic {
 .topics-container>.project {
     border: 1px solid black;
 }
-.js-b{border: 2px solid darkkhaki !important;}
-
-.docker-b{border: 2px solid darkslateblue !important;}
-.freecodecamp-b{border: 2px solid green !important;}
-.nodeJs-b { border: 2px solid royalblue !important;}
-.dark-mode .nodeJs-b { border: 2px solid royalblue !important;}
-
-.python-b {border: 2px solid mediumpurple !important;}
-
-
 .drop-sub-topic {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-left: 1px solid black;
+}
+.js-b{border: 2px solid darkkhaki !important;}
+.docker-b{border: 2px solid darkslateblue !important;}
+.freecodecamp-b{border: 2px solid green !important;}
+.nodeJs-b { border: 2px solid royalblue !important;}
+.dark-mode .nodeJs-b { border: 2px solid royalblue !important;}
+.python-b {border: 2px solid mediumpurple !important;}
+
+#aiYoutube{
+    border: 1px solid orangered;
 }
