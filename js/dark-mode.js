@@ -1,3 +1,5 @@
+import { homeH1 } from "./drop-topic.js"
+
 const darkmodeBtn = document.getElementById('darkmodeBtn')
 const body = document.querySelector('body')
 addEventListener('keydown', e => {
