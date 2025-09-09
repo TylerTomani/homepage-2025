@@ -1,6 +1,13 @@
 a.drop-topic{
-    border: 1px solid black 
+    /* border: 1px solid black  */
 }
 #aiToolsTopicsContainer .sub-topic .drop-sub-topic{
     border-bottom: none !important;
+}
+.drop-topic {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+.topics-container>.project {
+    border: 1px solid black;
 }

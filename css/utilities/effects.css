@@ -1,3 +1,13 @@
 a:focus {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+.drop-topic:active,
+.drop-topic:focus {
+    /* box-shadow: 2px 2px 5px 6px white !important; */
+    border-bottom: none;
+}
+
+.project:active,
+.project:focus {
+    /* box-shadow: 2px 2px 5px 6px white; */
 }

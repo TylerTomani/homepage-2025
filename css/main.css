@@ -64,26 +64,13 @@ a.drop-topic{
     width: 90%;
     padding: 0;
     padding-left: 2%;
-    /* border: 1px solid black; */
-    /* border-bottom: none; */
-    /* border-right: 1px solid  black; */
-    /* border-bottom: 1px solid navajowhite; */
-    /* border-top: 1px solid navajowhite; */
-    /* box-shadow: 1px 2px 1px 1px white; */
 }
 .topic > a.drop-topic,
 .drop-sub-topic {
     display: inline-flex;
     text-decoration: none;
 }
-.drop-topic:active,
-.drop-topic:focus{
-    box-shadow: 2px 2px 5px 6px white !important;
-}
-.project:active,
-.project:focus {
-    box-shadow: 2px 2px 5px 6px white;
-}
+
 .topics-container {
     /* color: blue; */
     display: flex;
@@ -101,7 +88,6 @@ a.drop-topic{
 .topics-container>.project {
     font-size: 70%;
     text-decoration: none;
-    border: 1px solid black;
     display: flex;
     flex-basis: 15%;
     flex-direction: column;
