@@ -64,6 +64,6 @@ h4 .dark-mode p {
 
 
 .dark-mode .project {
-    border: 1px solid whitesmoke;
-    
+    /* border: 1px solid whitesmoke; */
+    border: none !important;
 }
