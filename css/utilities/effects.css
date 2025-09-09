@@ -1,29 +1,31 @@
 :root {
-    --xB: 3px;
-    --yB: 2px;
+    --x: 1px;
+    --xB: 4px;
+    --yB: 4px;
 }
 
 .js-b:focus,
 .js-b:active {
-    box-shadow: 0 0 var(--xB) var(--yB) yellow !important;
+    box-shadow: var(--x) 0 var(--xB) var(--yB) yellow !important;
     border: 2px solid yellow !important;
+    border: 10px;
 }
 
-#nodeJsYoutube:focus,
-#nodeJsYoutube:active {
-    box-shadow: 0 0 var(--xB) var(--yB) royalblue !important;
+.nodeJs-b:focus,
+.nodeJs-b:active {
+    box-shadow: var(--x) 0 var(--xB) var(--yB) royalblue !important;
     border: 2px solid royalblue !important;
 }
 
-#pythonYoutube:focus,
-#pythonYoutube:active {
-    box-shadow: 0 0 var(--xB) var(--yB) mediumpurple !important;
+.python-b:focus,
+.python-b:active {
+    box-shadow: var(--x) 0 var(--xB) var(--yB) mediumpurple !important;
     border: 2px solid mediumpurple !important;
 }
 
-#dockerYoutube:focus,
-#dockerYoutube:active {
-    box-shadow: 0 0 var(--xB) var(--yB) darkslateblue !important;
+.docker-b:focus,
+.docker-b:active {
+    box-shadow: var(--x) 0 var(--xB) var(--yB) darkslateblue !important;
     border: 2px solid darkslateblue !important;
 }
 

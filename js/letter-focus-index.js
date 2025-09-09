@@ -4,7 +4,7 @@ document.addEventListener('keydown', function (e) {
     const key = e.key.toLowerCase();
     if (key.length !== 1 || !/^[a-z0-9]$/.test(key)) return;
 
-    const allAs = [...document.querySelectorAll('a, button')].filter(a => {
+    const allAs = [...document.querySelectorAll('a')].filter(a => {
         const rect = a.getBoundingClientRect();
         return a.offsetParent !== null && rect.width > 0 && rect.height > 0;
     });

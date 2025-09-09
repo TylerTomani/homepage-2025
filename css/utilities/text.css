@@ -7,3 +7,22 @@ header {
 main>.topic a {
     text-decoration: none;
 }
+header>.topics-container {
+    font-size: 60%;
+}
+
+.topic>a.drop-topic,
+.drop-sub-topic {
+    text-decoration: none;
+}
+.topics-container>.project {
+    font-size: 70%;
+    text-decoration: none;
+}
+.drop-sub-topic {
+    text-decoration: underline;
+}
+.sub-topic-container>.project {
+    text-decoration: none;
+    font-size: 70%;
+}

@@ -14,3 +14,10 @@ a.drop-topic {
 .dark-mode .nodeJs-b { border: 2px solid royalblue !important;}
 
 .python-b {border: 2px solid mediumpurple !important;}
+
+
+.drop-sub-topic {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
