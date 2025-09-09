@@ -2,7 +2,23 @@ const dropTopics = document.querySelectorAll('.drop-topic')
 const dropSubTopics = document.querySelectorAll('.drop-sub-topic')
 const topicsContainers = document.querySelectorAll('.topics-container')
 const subTopicContainer = document.querySelectorAll('.sub-topic-container')
-
+const homeH1 = document.querySelector('#homeH1')
+homeH1.addEventListener('click', e => {
+    e.preventDefault()
+    console.log('click')
+    hideAllTopicsContainers()
+    hideAllSUBTopicsContainers()    
+})
+homeH1.addEventListener('keydown', e => {
+    let key = e.key.toLowerCase()
+    if(key == 'enter'){
+        console.log('here')
+        hideAllTopicsContainers()
+        // hideAllSUBTopicsContainers()    
+        
+    }
+    
+})
 dropTopics.forEach(el => {
     el.addEventListener('click', e =>{
         e.preventDefault()

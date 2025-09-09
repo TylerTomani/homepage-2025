@@ -1,6 +1,10 @@
 @import url('utilities/border.css');
+@import url('utilities/colors.css');
 @import url('utilities/effects.css');
+@import url('utilities/layout.css');
+@import url('utilities/position.css');
 @import url('utilities/spacing.css');
+@import url('utilities/text.css');
 :root{
     --blue:#192752;
 }
@@ -11,31 +15,13 @@
     box-sizing: border-box;
     position: relative;
 }
-.btn-container {
-    position: absolute;
-    z-index: 2;
-    top: 45%;
-    right: 0;
-}
-body {
-    background-color: whitesmoke;
-    /* background: linear-gradient(to bottom,
-                #192752, #192752,
-                #192752, #b1b4bb,
-                #5d6c26, #8a8034,
-                #192752); */
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    /* background: repeating-linear-gradient(100deg,darkorange, white 1%,#1f3741  90%); */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
+
 header h1{
      /* border: 2px solid black; */
-    color: #484230;
-    font-size: 200%;
+    /* color: #484230; */
 }
+
 header > .topics-container {
     font-size: 60%;
 }
@@ -53,13 +39,8 @@ main{
     flex-direction: column;
     padding-bottom: 20%;
 }
-main>.topic {
-    margin: 1%;
-}
-main > .topic a {
-    text-decoration: none;
-    color: rgb(72, 70, 65);
-}
+
+
 a.drop-topic{
     width: 90%;
     padding: 0;

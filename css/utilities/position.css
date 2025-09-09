@@ -1,0 +1,6 @@
+.btn-container {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    right: 0;
+}

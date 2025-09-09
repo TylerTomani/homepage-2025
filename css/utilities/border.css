@@ -1,13 +1,16 @@
-a.drop-topic{
-    /* border: 1px solid black  */
-}
-#aiToolsTopicsContainer .sub-topic .drop-sub-topic{
-    border-bottom: none !important;
-}
-.drop-topic {
+
+a.drop-topic {
     border-top: 1px solid black;
     border-left: 1px solid black;
 }
 .topics-container>.project {
     border: 1px solid black;
 }
+.js-b{border: 2px solid darkkhaki !important;}
+
+.docker-b{border: 2px solid darkslateblue !important;}
+.freecodecamp-b{border: 2px solid green !important;}
+.nodeJs-b { border: 2px solid royalblue !important;}
+.dark-mode .nodeJs-b { border: 2px solid royalblue !important;}
+
+.python-b {border: 2px solid mediumpurple !important;}

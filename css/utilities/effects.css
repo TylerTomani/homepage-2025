@@ -1,13 +1,35 @@
-a:focus {
-    /* border: 2px solid blue; */
-}
-.drop-topic:active,
-.drop-topic:focus {
-    /* box-shadow: 2px 2px 5px 6px white !important; */
-    border-bottom: none;
+:root {
+    --xB: 3px;
+    --yB: 2px;
 }
 
-.project:active,
-.project:focus {
-    /* box-shadow: 2px 2px 5px 6px white; */
+.js-b:focus,
+.js-b:active {
+    box-shadow: 0 0 var(--xB) var(--yB) yellow !important;
+    border: 2px solid yellow !important;
+}
+
+#nodeJsYoutube:focus,
+#nodeJsYoutube:active {
+    box-shadow: 0 0 var(--xB) var(--yB) royalblue !important;
+    border: 2px solid royalblue !important;
+}
+
+#pythonYoutube:focus,
+#pythonYoutube:active {
+    box-shadow: 0 0 var(--xB) var(--yB) mediumpurple !important;
+    border: 2px solid mediumpurple !important;
+}
+
+#dockerYoutube:focus,
+#dockerYoutube:active {
+    box-shadow: 0 0 var(--xB) var(--yB) darkslateblue !important;
+    border: 2px solid darkslateblue !important;
+}
+
+.project:focus,
+.project:active {
+    margin-top: 2px !important;
+    margin-left: 2px !important;
+    transition: all .2s;
 }

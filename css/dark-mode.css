@@ -7,7 +7,9 @@
     background-color: var(--bg-primary);
     color: var(--font-primary)
 }
-
+.dark-mode #homeH1 {
+    color: whitesmoke !important;
+}
 .dark-mode .drop-topic,
 .dark-mode .drop-sub-topic{
     border: 1px solid var(--font-primary);
@@ -63,7 +65,3 @@ h4 .dark-mode p {
 }
 
 
-.dark-mode .project {
-    /* border: 1px solid whitesmoke; */
-    border: none !important;
-}
